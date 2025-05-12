@@ -184,7 +184,7 @@ def entrar(parameters, especificos, driver, nivel=0):
                 data.at[len(data)-1, field] = value
 
             xpath_base_2 = f"//tr[@id='tr{a}']/td"
-            fields_2 = ['POI_aprobado', 'PIA', 'POI_consistente_PIA', 'PIM', 'POI modificado', 'DEV', 'ejecutado', 'POI/PIA']
+            fields_2 = ['PIA', 'PIM', 'Certificacion', 'Compromiso Anual', 'Atencion al compromiso mensual', 'DEV', 'Girado', 'Avance']
             fields_2.insert(0, globals()['parametersinicial'][-1][0])
 
             for x, field in enumerate(fields_2):
